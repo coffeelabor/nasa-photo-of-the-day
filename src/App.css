@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid skyblue;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .App-logo {

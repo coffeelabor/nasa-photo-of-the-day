@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Grid, Container, Image, Header, Icon } from "semantic-ui-react";
+import {
+  Grid,
+  Container,
+  Image,
+  Header,
+  Icon,
+  Segment
+} from "semantic-ui-react";
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
+
 function App() {
   const [nasaPhoto, setNasaPhoto] = useState([]);
   console.log("nasaPhoto Log", nasaPhoto);
@@ -35,11 +43,15 @@ function App() {
         <Header.Content>{nasaPhoto.title}</Header.Content>
       </Header>
       <Grid.Row>
-        <Grid.Column width={4}>
-          <Image src={nasaPhoto.url} />
+        <Grid.Column width={6}>
+          <Segment raised>
+            <Image src={nasaPhoto.url} rounded />
+          </Segment>
         </Grid.Column>
-        <Grid.Column width={12}>
-          <Container>{nasaPhoto.explanation}</Container>
+        <Grid.Column width={6}>
+          <Segment raised>
+            <Container>{nasaPhoto.explanation}</Container>
+          </Segment>
         </Grid.Column>
       </Grid.Row>
     </Grid>

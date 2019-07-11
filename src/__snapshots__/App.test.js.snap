@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should match snapshot 1`] = `
+<div
+  className="ui center aligned middle aligned grid"
+  style={
+    Object {
+      "height": "100vh",
+      "margin": "20px auto",
+      "width": "90%",
+    }
+  }
+>
+  <h1
+    className="ui header"
+  >
+    <i
+      aria-hidden="true"
+      className="space shuttle icon"
+      onClick={[Function]}
+    />
+    <div
+      className="content"
+    >
+       And a change to UI
+    </div>
+  </h1>
+  <div
+    className="ui section divider"
+  />
+  <div
+    className="row"
+  >
+    <div
+      className="four wide column"
+    >
+      <img
+        className="ui image"
+      />
+    </div>
+    <div
+      className="twelve wide column"
+    >
+      <div
+        className="ui container"
+      />
+    </div>
+  </div>
+</div>
+`;
